@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto mono', monospace;
+}
+.home-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: #47cfac;
+}
+header .header-icons-container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+header .header-icons-container .icons span {
+  color: white;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile-link a {
+  border-bottom: 2px solid black;
+  transition: 0.15s ease-in;
+}
+nav .profile-link a:hover {
+  border-bottom: 2px solid #47cfac;
+}
+.home-main {
+  background-image: url('../assets/img/Cover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-main .home-container {
+  display: grid;
+  height: 600px;
+  width: 100%;
+}
+.home-main .home-container h1 {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  align-self: center;
+  letter-spacing: 5px;
+}
+.home-main .home-container a {
+  justify-self: center;
+  background-color: #47cfac;
+  padding: 20px 30px;
+  max-height: 63px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.2s ease-in;
+}
+.home-main .home-container a:hover {
+  background-color: aqua;
+}
+/*Seccion de noticias del blog*/
+.new-section {
+  width: 100%;
+  background-color: #22272d;
+  padding: 30px 50px;
+}
+.new-section h1 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+}
+.new-section-container {
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 50px;
+}
+.new-section-foto {
+  align-self: center;
+}
+.new-section-foto img {
+  width: 100%;
+}
+.new-section-content {
+  align-self: center;
+  color: white;
+}
+.new-section-content .new-post-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.new-section-content .new-section-excerpt {
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.read-post-button {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #47cfac;
+  transition: 0.15s ease-in;
+}
+.read-post-button:hover {
+  background-color: #47cfac;
+}
+.read-post-button.in-new-section {
+  background-color: #47cfac;
+}
+.read-post-button.in-new-section:hover {
+  color: white;
+}
+.blog-post-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+.blog-post-section h2 {
+  text-align: center;
+}
+.post-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.post figure img {
+  width: 100%;
+}
+.post .post-title {
+  font-weight: bold;
+}
+.post .post-excerpt {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.blog-post-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0 30px;
+}
+.blog-post-content img {
+  width: 100%;
+  max-width: 1440px;
+}
+.blog-main-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+.blog-main-content h1 {
+  margin-top: 25px;
+  font-size: 35px;
+}
+.blog-main-content .postcategoria {
+  font-weight: bold;
+}
+.blog-main-content .post-content {
+  margin-top: 25px;
+}
+.contact-section {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #22272d;
+}
+.contact-section-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 85px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 150px;
+}
+.contact-section .contact {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.contact figure img {
+  width: 120px;
+}
+.contact-details a {
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.contact-details p {
+  margin-top: 15px;
+  color: white;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #22272d;
+  border-top: 35px solid #47cfac;
+}
+footer div {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 12px;
+  height: auto;
+}
+.miPerfil {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #22272d;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 50px;
+  color: white;
+}
+.miPerfil .mi-foto img {
+  width: 100%;
+}
+.miPerfil .mi-info p {
+  margin-top: 25px;
+}
+.misProyectos {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 35px 50px;
+}
+.misProyectos h2 {
+  text-align: center;
+}
+.project-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.project-item figure img {
+  width: 100%;
+}
+.project-item h3,
+.project-item p {
+  margin-top: 15px;
+}
+/*Media aqueries*/
+@media (max-width: 800px) {
+  .new-section-container {
+    grid-template-columns: 1fr;
+  }
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-section-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .miPerfil {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  nav .nav-logo-container img {
+    margin-left: 0;
+  }
+  .new-section h1 {
+    text-align: center;
+  }
+  .new-section-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .new-section-container .new-section-foto,
+  .new-section-container .new-section-content {
+    width: 100%;
+  }
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+}
